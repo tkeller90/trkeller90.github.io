@@ -1,24 +1,41 @@
-<!-- HTML is made up of elements-->
+<!--declare what type of page this is-->
+<!DOCTYPE html>
 
-<!DOCTYPE html> 
+<!--where html starts and ends-->
+
 <html>
-<!--ELEMENTS are just boxes that we place content in-->
-<!--ELEMENTS are made up of tags and attributes-->
-<!--TAGS look like <sometags>    </sometag> -->
 
-    <!--overall structure of HTML elements are: <sometag> CONTENT FOR THAT ELEMENT</sometag> -->
+<head>
+    <title>OUR FIRST GAME</title>
+</head>
 
-    <!-- ATTRIBUTES are descriptors of elements that provide more context or provide customization to an element-->
-    <head>
-<!--HEAD element provides metadata-->
-        <title>My first page!        </title>
+<!--html pages are made of elements-->
+<!--elements have three parts, a tag that describes the elements, the content/what's being rendered by the browser and the attributes-->
+<body style="background-color: darkcyan; color: white; font-family: monospace">
 
-    </head>
-    <body>
-<!--BODY renders everything that we see in the viewpoint OR we interact with-->
-        <h1> HI THERE</h1>
-        <p style="background-color: beige; font-size: 48px;">WHAT ARE WE DOING?@?! Making an example here. I'll start making my website when we get to the point in the lecture that tells me to. 
-        </p>
-    </body>
+    <!--H1 through H6 are Section Titles-->
+
+        <h1 style="color: white; text-align: center; font-family: monospace;">POKEMON (BUT NOT REALLY) THE GAME</h1>
+    <!--IMG element renders an image-->
+
+    <img src="./assets/Pallet_Town_PE.png" aria-label="an image of pallet town from pokemon" style="width: 100%"></img>
+
+    <button class="start-button" style="width: 100%"><h1 style="text-align: center;"><a href="./game.html">START</a></h1></button>
+
+    <!--LISTS: ordered list (where the steps count; 1,2,3,4) and unordered lists (lists where order doesn't matter;  * , * )-->
+
+    <section id="credits">
+        <h2 style="text-align: center">Credits</h2>
+        <ol>
+            <li>Sprites:  <a href="https://www.dragonflycave.com/resources/sprite-generator/">Dragonfly Cave</a></li>
+            <li>Pallet Town Image:  <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page">Bulbapedia</a></li>
+        </ol>
+    </section>
+
+    <h3 style="color: white; text-align: center; font-family: monospace;">COPYRIGHT: pokemon is owned by gamefreak and this page is created as a fanwork</h3>
+    
+
+
+
+</body>
 </html>
-
