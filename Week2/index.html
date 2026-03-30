@@ -1,41 +1,50 @@
-<!--declare what type of page this is-->
+<!-- HTML is made up of elements -->
+
 <!DOCTYPE html>
-
-<!--where html starts and ends-->
-
 <html>
+<!--ELEMENTS are just boxes that we place content in-->
+<!--ELEMENTS are made up of tags and attributes-->
+<!--TAGS look like <sometag> CONTENT </sometag> -->
+
+<!-- overall structure of HTML elements are:  <sometag>CONTENT FOR THAT ELEMENT</sometag> -->
+
+<!--attributes are descriptors of elements that provide more context or provide customization to an element-->
 
 <head>
-    <title>OUR FIRST GAME</title>
+    <!--HEAD element provides metadata-->
+
+    <title>My first page!</title>
+
 </head>
 
-<!--html pages are made of elements-->
-<!--elements have three parts, a tag that describes the elements, the content/what's being rendered by the browser and the attributes-->
-<body style="background-color: darkcyan; color: white; font-family: monospace">
+<body> <!--the body renders everything that we see in the viewport OR we interact with-->
 
-    <!--H1 through H6 are Section Titles-->
+    <!--the style attribute styles an element-->
 
-        <h1 style="color: white; text-align: center; font-family: monospace;">POKEMON (BUT NOT REALLY) THE GAME</h1>
-    <!--IMG element renders an image-->
+    <h1>Welcome! </h1>
+    <p style="background-color: beige; font-size: 48px;">
+        Here we have created the first of one html page of a few. 
+    </p>
 
-    <img src="./assets/Pallet_Town_PE.png" aria-label="an image of pallet town from pokemon" style="width: 100%"></img>
-
-    <button class="start-button" style="width: 100%"><h1 style="text-align: center;"><a href="./game.html">START</a></h1></button>
-
-    <!--LISTS: ordered list (where the steps count; 1,2,3,4) and unordered lists (lists where order doesn't matter;  * , * )-->
-
-    <section id="credits">
-        <h2 style="text-align: center">Credits</h2>
-        <ol>
-            <li>Sprites:  <a href="https://www.dragonflycave.com/resources/sprite-generator/">Dragonfly Cave</a></li>
-            <li>Pallet Town Image:  <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page">Bulbapedia</a></li>
-        </ol>
-    </section>
-
-    <h3 style="color: white; text-align: center; font-family: monospace;">COPYRIGHT: Pokemon is owned by Gamefreak and this page is created as a fanwork</h3>
+    <!--Elements can have multiple attributes, but only 1 tag-->
     
+    <!--ELEMENTS are made up of tags (mandatory), attribute (optional), content (what is in the element)-->
 
+    <div style="background-color: black; color: white; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" class="ships-scifi">
 
+        <p id="lorem-ipsum" style="color: red;">If you are a peak millenial like me, you probably started playing with html around the same time everyone wanted cool MySpace pages so we learned how to embed songs and change the style and font and everything inbetween to have the coolest page. </p>
 
+        <h2> Places we used html at</h2>
+        <ul>
+            <li id="tom">MySpace</li>
+            <li id="journal">Xanga</li>
+            <li id="yearbook">Facebook</li>
+            <li id="game">Guild Website </li>
+        </ul>
+
+    </div>
+
+  
 </body>
+
 </html>
